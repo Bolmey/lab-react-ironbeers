@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom'
-import Header from './Header'
 import axios from 'axios'
+import Header from './Header'
+import { useHistory } from 'react-router-dom'
+
 
 
 function NewBeer(props) {
     const history = useHistory()
     const [info, setInfo] = useState({})
-    function onChange(e) {
-        info[e.target.name] = e.target.value
+    function onChange(element) {
+        info[element.target.name] = element.target.value
         setInfo(info)
-        console.log(e.target.value, e.target.name)
+        console.log(element.target.value, element.target.name)
     }
 
-    async function submitForm(e) {
-        e.preventDefault()
+    async function submitForm(element) {
+        element.preventDefault()
         console.log(info)
         const response = await axios.post('https://ih-beers-api2.herokuapp.com/beers/new', info)
         console.log(response.data)
@@ -25,7 +26,7 @@ function NewBeer(props) {
     return (
         <form onSubmit={submitForm}>
             <Header />
-            <h1>Create a new beer</h1>
+            <h1>Create new beer</h1>
             <div >
                 <input required type="text" name='name' placeholder="Name" onChange={onChange} />
                 <label htmlFor="floatingInput">Name</label>
