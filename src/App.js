@@ -6,7 +6,7 @@ import Beers from "./Components/Beers";
 import Randombeer from './Components/Randombeer';
 import Newbeer from "./Components/Newbeer";
 import Beerdetail from "./Components/Beerdetail";
-import axios from 'axios';
+
 
 function App() {
 

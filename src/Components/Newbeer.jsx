@@ -11,12 +11,10 @@ function NewBeer(props) {
     function onChange(element) {
         info[element.target.name] = element.target.value
         setInfo(info)
-        console.log(element.target.value, element.target.name)
     }
 
     async function submitForm(element) {
         element.preventDefault()
-        console.log(info)
         const response = await axios.post('https://ih-beers-api2.herokuapp.com/beers/new', info)
         console.log(response.data)
         history.push(`/beers`)

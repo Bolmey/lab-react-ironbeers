@@ -19,6 +19,7 @@ const Beer = () => {
         return () => console.log(`Comp unmount`)
     }, [])
 
+
     const newBeer = () => {
         return beer.map((beer) => {
             return (
