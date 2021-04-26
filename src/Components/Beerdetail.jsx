@@ -35,7 +35,7 @@ const Beerdetail = (props) => {
 
     const printBeerDetail = () => {
         return (
-            <div style={{ marginTop: '4rem' }}>
+            <div className="beerDetail">
                 <img style={{ height: '10rem' }} src={beer.image_url} />
                 <div>
                     <b>Name:</b>

@@ -1,5 +1,29 @@
 
 .beerImg{
   height:150px;
+  margin-left: 25px;
+}
 
+
+.headerStyle {
+  text-decoration: none;
+  font-size: 30px
+}
+
+
+.beerDetail {
+  margin-top: 4rem;
+  
+  
+}
+
+.beerSection {
+  border-bottom: 2px black solid;
+  display:flex;
+  padding: 15px 0px;
+  
+}
+
+.beerDescription{
+  margin-left: 25px;
 }

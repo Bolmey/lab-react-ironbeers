@@ -24,7 +24,7 @@ const Beer = () => {
             return (
                 <div className="beerSection">
                     <div><img className="beerImg" src={beer.image_url} /></div>
-                    <div>
+                    <div className="beerDescription">
                         <Link to={`/beers/${beer._id}`}><h2>{beer.name}</h2></Link>
                         <h3>{beer.tagline}</h3>
                         <p><b>Creater by:</b> {beer.contributed_by}</p>

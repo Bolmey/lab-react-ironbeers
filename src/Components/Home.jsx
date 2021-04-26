@@ -5,13 +5,15 @@ import { Link, Route, Switch } from 'react-router-dom';
 // import Newbeer from "./Newbeer";
 
 const Home = () => {
+
+
     return (
 
         <div>
             <div>
                 <img src={"../assets/beers.png"} />
                 <div>
-                    <Link to="/beers">Beers</Link>
+                    <Link className="headerStyle" to="/beers">Beers</Link>
                     <br />
                     <p>lorem ipsum dolor sit amet,
                     consectetur lorem ipsum Lorem ipsum
@@ -21,7 +23,7 @@ const Home = () => {
             <div>
                 <img src={"../assets/random-beer.png"} />
                 <div>
-                    <Link to="/random-beer">Random beer</Link>
+                    <Link className="headerStyle" to="/random-beer">Random beer</Link>
                     <br />
                     <p>lorem ipsum dolor sit amet,
                     consectetur lorem ipsum Lorem ipsum
@@ -31,7 +33,7 @@ const Home = () => {
             <div>
                 <img src={"../assets/new-beer.png"} />
                 <div>
-                    <Link to="/new-beer">New beer</Link>
+                    <Link className="headerStyle" to="/new-beer">New beer</Link>
                     <br />
                     <p>lorem ipsum dolor sit amet,
                     consectetur lorem ipsum Lorem ipsum
